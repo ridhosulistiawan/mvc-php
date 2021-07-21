@@ -10,7 +10,6 @@ $(function() {
         $('#nim').val('')
         $('#prodi').val('');
         $('#email').val('');
-        console.log('tes tombol tambah');
     });
 
     $('.tampilModalUbah').on('click', function() {
