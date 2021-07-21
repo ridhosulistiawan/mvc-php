@@ -1,15 +1,34 @@
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row">
         <div class="col-lg-6">
             <?php Flasher::flash(); ?>
         </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+            <button type="button" class="btn btn-primary mb-3 tombolTambahData" data-toggle="modal" data-target="#formModal">
+            Tambah Data Mahasiswa
+            </button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <form action="<?= BASEURL; ?>/mahasiswa/cari" method="post">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Cari nama mahasiswa" name="keyword" id="keyword" autocomplete="off">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit" id="tombolCari">Cari</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <div class="row">
         <div class="col-lg-6">
             <h3>Daftar Mahasiswa</h3>
-            <button type="button" class="btn btn-primary m-3 tombolTambahData" data-toggle="modal" data-target="#formModal">
-            Tambah Data
-            </button>
                 <ul class="list-group">
                 <?php foreach( $data['mhs'] as $mhs ) : ?>
 
