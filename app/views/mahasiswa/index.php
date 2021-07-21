@@ -43,7 +43,7 @@
             <input type="hidden" name='id' id='id'>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Nama</label>
-                <input type="nama" class="form-control" id="nama" name="nama" placeholder="nama mahasiswa">
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="nama mahasiswa">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">NIM</label>
